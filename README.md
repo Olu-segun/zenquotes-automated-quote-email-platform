@@ -18,7 +18,7 @@ The platform integrates with the **ZenQuotes API** to fetch random motivational 
 - **Python** (for automation and scheduling)  
 - **SMTP / Gmail API** (for sending emails)  
 - **ZenQuotes API** (for quote retrieval)  
-- **SQLite or CSV** (for managing subscribers)  
+- **Postgres SQL** (for managing subscribers)  
 
 ---
 
