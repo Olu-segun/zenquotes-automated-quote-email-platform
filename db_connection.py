@@ -1,6 +1,18 @@
+from dotenv import load_dotenv
+import os
 import psycopg2
-conn = psycopg2.connect( host = "localhost", dbname = "postgres", user = "postgres", 
-                         password = 1992, port = 5432)
+
+load_dotenv()
+
+conn = psycopg2.connect( 
+    host = os.getenv("PGHOST"), 
+    dbname = os.getenv("PGDATABASE"), 
+    user = os.getenv("PGUSER"), 
+    password = os.getenv("PGPASSWORD"), 
+    port = os.getenv("PGPORT")
+)
+
+#Connect to postgres database and create table
 
 cur = conn.cursor()
 
@@ -14,6 +26,7 @@ cur.execute(""" CREATE TABLE IF NOT EXISTS users (
             );
              """)
 
+#Insert subscribers' record to the database.
 
 cur.execute(""" INSERT INTO users(user_id, first_name, last_name, email_address, 
             subscription_status, email_frequency)
