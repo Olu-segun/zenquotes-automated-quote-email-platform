@@ -18,10 +18,10 @@ cur.execute(""" CREATE TABLE IF NOT EXISTS users (
 cur.execute(""" INSERT INTO users(user_id, first_name, last_name, email_address, 
             subscription_status, email_frequency)
     VALUES
-    (1, 'Olusegun', 'Olukayode', 'olukayodeoluseguno@gmail.com', 'active', 'daily'),
+    (1, 'Olusegun', 'Fakayode', 'fakayodeoluseguno@gmail.com', 'active', 'daily'),
     (2, 'Omosola', 'Olukayode', 'omosoladaramola@gmail.com', 'active', 'weekly'),
     (3, 'Obaloluwa', 'Adebisi', 'ericolukayodeo@gmail.com', 'active', 'daily'),
-    (4, 'Emily', 'Davis', 'emily.davis@example.com', 'active', 'weekly'),
+    (4, 'Beejan', 'Davis', 'beejan@dataengineeringcommunity.com', 'active', 'weekly'),
     (5, 'Chris', 'Brown', 'chris.brown@example.com', 'inactive', 'daily'),
     (6, 'Olivia', 'Taylor', 'olivia.taylor@example.com', 'active', 'daily'),
     (7, 'Daniel', 'Wilson', 'daniel.wilson@example.com', 'inactive', 'weekly'),
