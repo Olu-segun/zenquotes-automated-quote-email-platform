@@ -11,11 +11,11 @@ def extract_data():
 def save_quote():
     quote = extract_data()
 
-    filename = f'quote_{datetime.now().strftime("%Y-%m-%d")}.txt'
+    filename = f'quote_for_today.txt'
 
     with open(filename, "w", encoding="utf-8") as file:
         file.write(quote)
     
-    print(f"✅ Quote saved successfully to {filename}")
+    print(f"Quote saved successfully to {filename}")
 
 save_quote()
