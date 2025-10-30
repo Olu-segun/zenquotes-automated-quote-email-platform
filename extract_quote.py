@@ -3,10 +3,13 @@ from datetime import datetime
 
 def extract_data():
     url = "https://zenquotes.io/api/random"
-    response = requests.get(url)
-    data = response.json()
-    quote_author = f'{data[0]["q"]} - {data[0]["a"]}'
-    return quote_author
+    try:
+        response = requests.get(url)
+        data = response.json()
+        quote_author = f'{data[0]["q"]} - {data[0]["a"]}'
+        return quote_author
+    except Exception as e:
+        print(f'Error fetching quote: {e}')
 
 def save_quote():
     quote = extract_data()
