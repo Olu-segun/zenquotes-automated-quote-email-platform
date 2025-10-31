@@ -6,6 +6,7 @@ load_dotenv()
 
 def fetch_user():
 # Connecting to database
+
     conn = psycopg2.connect(
         host = os.getenv(""),
         dbname = os.getenv("PGDATABASE"),
@@ -15,6 +16,7 @@ def fetch_user():
     )
 
     cur = conn.cursor()
+    
     # Extracting active subscriber from database
     cur.execute("""
                     SELECT user_id, first_name, last_name, email_address, subscription_status
