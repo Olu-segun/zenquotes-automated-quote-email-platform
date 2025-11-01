@@ -1,7 +1,7 @@
 import requests
 from datetime import datetime
 
-def extract_data():
+def extract_quote():
     url = "https://zenquotes.io/api/random"
     try:
         response = requests.get(url)
@@ -11,8 +11,9 @@ def extract_data():
     except Exception as e:
         print(f'Error fetching quote: {e}')
 
+# Saving quote to text file
 def save_quote():
-    quote = extract_data()
+    quote = extract_quote()
 
     filename = f'quote_for_today.txt'
 
@@ -21,4 +22,4 @@ def save_quote():
     
     print(f"Quote saved successfully to {filename}")
 
-save_quote()
+

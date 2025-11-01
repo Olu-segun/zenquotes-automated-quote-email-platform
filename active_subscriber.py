@@ -8,7 +8,7 @@ def fetch_user():
 # Connecting to database
 
     conn = psycopg2.connect(
-        host = os.getenv(""),
+        host = os.getenv("PGHOST"),
         dbname = os.getenv("PGDATABASE"),
         user = os.getenv("PGUSER"),
         password = os.getenv("PGPASSWORD"),
@@ -24,9 +24,5 @@ def fetch_user():
                     WHERE subscription_status = 'active';  
     """)
     users = cur.fetchall()
-    for user in users:
-        print(user)
-
     conn.close()
-    return user
-fetch_user()
+    return users
