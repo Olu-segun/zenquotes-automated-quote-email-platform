@@ -19,10 +19,15 @@ def fetch_user():
     
     # Extracting active subscriber from database
     cur.execute("""
-                    SELECT user_id, first_name, last_name, email_address, subscription_status
+                    SELECT 
+                            user_id, 
+                            first_name,  
+                            email_address, 
+                            subscription_status
                     FROM users
                     WHERE subscription_status = 'active';  
     """)
     users = cur.fetchall()
     conn.close()
     return users
+

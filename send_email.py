@@ -6,8 +6,8 @@ import os
 
 load_dotenv()
 
-smtp_server = "smtp.gmail.com"
-smtp_port = 587
+smtp_server = os.getenv("SMTP_SERVER")
+smtp_port = os.getenv("SMTP_PORT")
 sender_email = os.getenv("SENDER_EMAIL")
 email_password = os.getenv("EMAIL_PASSWORD")
 

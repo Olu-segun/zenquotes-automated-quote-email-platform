@@ -35,7 +35,7 @@ cur.execute(""" INSERT INTO users(user_id, first_name, last_name, email_address,
     (2, 'Omosola', 'Olukayode', 'omosoladaramola@gmail.com', 'active', 'weekly'),
     (3, 'Obaloluwa', 'Adebisi', 'ericolukayodeo@gmail.com', 'active', 'daily'),
     (4, 'Beejan', 'Davis', 'beejan@dataengineeringcommunity.com', 'active', 'weekly'),
-    (5, 'Feyisayo', 'Ajiboye', 'solapeajiboye@gmail.com', 'inactive', 'daily'),
+    (5, 'Feyisayo', 'Ajiboye', 'solapeajiboye@gmail.com', 'active', 'daily'),
     (6, 'Esther', 'Ogunrinde', 'ogunrindee2@gmail.com', 'active', 'daily'),
     (7, 'Oluwakemi', 'Akinyede', 'akinyedeoluwakemi@gmail.com', 'active', 'Daily'),
     (8, 'Paul', 'Oyelaran', 'oyelaranpaul@gmail.com', 'active', 'Daily'),
@@ -52,6 +52,8 @@ cur.execute(""" INSERT INTO users(user_id, first_name, last_name, email_address,
     (19, 'Lucas', 'Lewis', 'lucas.lewis@example.com', 'inactive', 'daily'),
     (20, 'Harper', 'Lee', 'harper.lee@example.com', 'inactive', 'weekly');
 """)
+
+conn.commit()
 cur.close()
 conn.close()
 
