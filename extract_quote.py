@@ -11,7 +11,7 @@ def extract_quote():
     
     except Exception as e:
         print(f'Error fetching quote: {e}')
-        
+
 
 
 

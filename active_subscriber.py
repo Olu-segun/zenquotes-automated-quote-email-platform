@@ -5,8 +5,8 @@ import psycopg2
 load_dotenv()
 
 def fetch_user():
-# Connecting to database
 
+# Connecting to database
     conn = psycopg2.connect(
         host = os.getenv("PGHOST"),
         dbname = os.getenv("PGDATABASE"),

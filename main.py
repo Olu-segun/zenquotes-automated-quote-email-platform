@@ -29,7 +29,7 @@ def send_quote_to_users():
     print(f"Quote saved successfully to {QUOTE_FETCHED}")
 
     users = fetch_user()
-    subject = "Daily Inspirational Quote from MindFuel"
+    subject = "Daily Inspirational Quote from MindFuel 🌟"
 
     if not quote:
         print("Failed to fetch quote. Exiting.")
@@ -38,13 +38,13 @@ def send_quote_to_users():
     for user in users:
         email = user[2]
         name = user[1]
-
+        
         message = (
             f"Hi {name},\n\n"
             f"Here is your inspirational quote for today:\n\n"
             f"{quote}\n\n"
             f"Have a wonderful and productive day!\n\n"
-            f"— MindFuel Team"
+            f" — MindFuel Team"
         )
 
         for attempt in range(3):  # Retry logic
