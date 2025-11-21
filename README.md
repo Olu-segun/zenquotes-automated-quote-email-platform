@@ -3,20 +3,27 @@
 🧠 MindFuel – Automated Daily Inspirational Quote Emaile
 This project is an automated email system designed to send daily inspirational quotes to active subscribers. It fetches a quote, retrieves subscriber information, sends personalized emails, and logs all delivery results for tracking and debugging.
 
-📌 Features
-✔️ Daily Quote Extraction
+## 📌 Features
 
-Fetches a motivational quote using the extract_quote module.
-✔️ Subscriber Fetching
-Retrieves active subscribers from a database or any connected data source via fetch_user.
-✔️ Personalized Email Sending
-Generates and sends a custom message to each subscriber, including their name and the daily quote.
-✔️ Retry Logic
-Each email is attempted up to 3 times before being marked as failed.
-✔️ Logging System
-Stores all email activities in:
-logs/email_log.csv
-logs/quote_fetched.txt
+### ✔️ Daily Quote Extraction
+Automatically fetches a motivational quote using the `extract_quote`
+module.
+
+### ✔️ Subscriber Fetching
+Retrieves active subscribers from a database or data source via
+`fetch_user`.
+
+### ✔️ Personalized Email Sending
+Sends each user a customized email containing their name and the daily
+quote.
+
+### ✔️ Retry Logic for Reliability
+Each email is attempted **up to 3 times** before being marked as failed.
+
+### ✔️ Logging System
+All email activities are stored in: - logs/email_log.csv\
+- logs/quote_fetched.txt
+
 
 ## 📂 Project Structure
   project-root/
