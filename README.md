@@ -58,8 +58,7 @@ All email activities are stored in: - logs/email_log.csv\
   - send_email
   - 
 ## 🧑‍💻 Author
-
-**Olusegun Olukayode**
+**Olusegun Olukayode**  
 Data and Analytics Engineer | Business Intelligence Analyst | Automation Enthusiast
 
 ## 🎯 Purpose
