@@ -26,15 +26,16 @@ All email activities are stored in: - logs/email_log.csv\
 
 
 ## 📂 Project Structure
-  project-root/
-│
-├── extract_quote.py
-├── active_subscriber.py
-├── send_email.py
-│
-└── logs/
-    ├── email_log.csv
-    └── quote_fetched.txt
+
+    project-root/
+    │
+    ├── extract_quote.py
+    ├── active_subscriber.py
+    ├── send_email.py
+    │
+    └── logs/
+        ├── email_log.csv
+        └── quote_fetched.txt
     
 ## 🛠️ Tech Stack
 - Python – scripting, automation
