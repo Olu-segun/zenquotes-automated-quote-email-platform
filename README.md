@@ -5,7 +5,7 @@
 🧠 MindFuel – Automated Daily Inspirational Quote Emailer
 This project is an automated email system designed to send daily inspirational quotes to active subscribers. It fetches a quote, retrieves subscriber information, sends personalized emails, and logs all delivery results for tracking and debugging.
 
-## 📌 Features
+## 🚀 Features
 
 ### ✔️ Daily Quote Extraction
 Automatically fetches a motivational quote using the `extract_quote`
