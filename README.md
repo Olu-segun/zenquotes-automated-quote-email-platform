@@ -64,7 +64,7 @@ All email activities are stored in: - logs/email_log.csv\
 **Olusegun Olukayode**  
 Data and Analytics Engineer | Business Intelligence Analyst | Automation Enthusiast
 
-## 🎯 Purpose
 ---
+## 🎯 Purpose
 _To inspire users daily through seamless email automation — combining simplicity, motivation, and reliability.
 
