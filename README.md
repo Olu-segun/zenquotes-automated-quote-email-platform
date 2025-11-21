@@ -1,5 +1,5 @@
 
-# Zenquotes
+# Zenquotes Automated Email Platform.
 
 ## 📌 Project Overview
 🧠 MindFuel – Automated Daily Inspirational Quote Emailer
