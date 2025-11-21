@@ -1,5 +1,3 @@
-# 📝 Project Description
-
 🧠 MindFuel – Automated Daily Inspirational Quote Emaile
 This project is an automated email system designed to send daily inspirational quotes to active subscribers. It fetches a quote, retrieves subscriber information, sends personalized emails, and logs all delivery results for tracking and debugging.
 
@@ -24,9 +22,7 @@ Each email is attempted **up to 3 times** before being marked as failed.
 All email activities are stored in: - logs/email_log.csv\
 - logs/quote_fetched.txt
 
-
 ## 📂 Project Structure
-
     project-root/
     │
     ├── extract_quote.py
