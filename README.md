@@ -9,7 +9,8 @@ The platform integrates with the **ZenQuotes API** to fetch random motivational 
 - Fetches fresh quotes from the **ZenQuotes API**  
 - Sends automated daily or weekly quote emails to subscribers  
 - Customizable email templates. 
-- Logging and error-handling for reliable delivery  
+- Logging and error-handling for reliable delivery
+- Scheduled delivery using Task Scheduler (Windows) or Cron Jobs (Linux)
 - Can be deployed on a server or cloud platform with cron or Task Scheduler  
 
 ---
