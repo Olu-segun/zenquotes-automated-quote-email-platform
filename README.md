@@ -58,7 +58,6 @@ logs/quote_fetched.txt
 **Olusegun Olukayode**
 Data and Analytics Engineer | Business Intelligence Analyst | Automation Enthusiast
 
----
 ## 🎯 Purpose
 _To inspire users daily through seamless email automation — combining simplicity, motivation, and reliability.
 
