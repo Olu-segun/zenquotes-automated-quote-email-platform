@@ -1,33 +1,23 @@
-from dotenv import load_dotenv
-import os
-import psycopg2
+from database_connection import get_connection
 
-load_dotenv()
+conn = get_connection()
+cur = conn.cursor()
 
 def fetch_user():
-
-# Connecting to database
-    conn = psycopg2.connect(
-        host = os.getenv("PGHOST"),
-        dbname = os.getenv("PGDATABASE"),
-        user = os.getenv("PGUSER"),
-        password = os.getenv("PGPASSWORD"),
-        port = os.getenv("PGPORT")
-    )
-
-    cur = conn.cursor()
-    
-    # Extracting active subscriber from database
     cur.execute("""
-                    SELECT 
-                            user_id, 
-                            first_name,  
-                            email_address, 
-                            subscription_status
-                    FROM users
-                    WHERE subscription_status = 'active';  
-    """)
+                SELECT
+                        u.user_id,
+                        u.first_name,
+                        u.email_address
+                FROM users u
+                LEFT JOIN email_logs e
+                ON u.user_id = e.user_id
+                AND e.quote_date = CURRENT_DATE
+                WHERE u.subscription_status = 'active'
+                AND e.user_id IS NULL;
+            """)
     users = cur.fetchall()
+
+    cur.close()
     conn.close()
     return users
-

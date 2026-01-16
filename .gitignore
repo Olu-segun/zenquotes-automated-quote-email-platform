@@ -1,2 +1,4 @@
 pyenv/
 .env
+__pycache__/
+setup_database
